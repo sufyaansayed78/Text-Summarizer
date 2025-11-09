@@ -1,0 +1,8 @@
+2025-11-09 22:00:02,018 - INFO - Starting the main application...]
+2025-11-09 22:00:02,020 - INFO -  File contents : ]
+2025-11-09 22:00:02,020 - INFO - YAML file: config\config.yaml loaded successfully]
+2025-11-09 22:00:02,020 - INFO -  File contents : ]
+2025-11-09 22:00:02,020 - INFO - YAML file: config\params.yaml loaded successfully]
+2025-11-09 22:00:02,020 - INFO - Directory created at: artifacts]
+2025-11-09 22:00:02,020 - INFO - Directory created at: artifacts/data_ingestion]
+2025-11-09 22:00:02,020 - INFO - Data ingestion completed successfully.]

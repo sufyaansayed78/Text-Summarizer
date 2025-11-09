@@ -1,0 +1,8 @@
+2025-11-09 21:58:24,850 - INFO - Starting the main application...]
+2025-11-09 21:58:24,850 - ERROR - An error occurred in the main application: DataIngestion.__init__() missing 1 required positional argument: 'config']
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Udemy MLops course\Summarizer using HuggingFace\main.py", line 7, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "C:\Users\Admin\Documents\Udemy MLops course\Summarizer using HuggingFace\src\textsummarizer\pipeline\data_ingestion_pipeline.py", line 6, in initiate_data_ingestion
+    data_ingestion = DataIngestion()
+TypeError: DataIngestion.__init__() missing 1 required positional argument: 'config'
