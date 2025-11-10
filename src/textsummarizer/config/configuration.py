@@ -1,7 +1,7 @@
 from src.textsummarizer.utils.common import read_yaml, create_directories
 from src.textsummarizer.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH
-from src.textsummarizer.entity.config_entity import DataIngestionConfig
- 
+from src.textsummarizer.entity.config_entity import DataIngestionConfig,DataTransformationConfig
+from pathlib import Path
 
 
 class ConfigurationManager:
@@ -25,4 +25,12 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
-    
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+        create_directories([config.root_dir])
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir=Path(config.root_dir),
+            transformed_data_dir=Path(config.transformed_data_dir),
+            tokenizer_name=config.tokenizer_name)
+        return data_transformation_config
