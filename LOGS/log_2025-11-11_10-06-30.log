@@ -1,0 +1,7 @@
+2025-11-11 10:06:30,165 - INFO -  File contents : ]
+2025-11-11 10:06:30,167 - INFO - YAML file: config\config.yaml loaded successfully]
+2025-11-11 10:06:30,172 - INFO -  File contents : ]
+2025-11-11 10:06:30,173 - INFO - YAML file: config\params.yaml loaded successfully]
+2025-11-11 10:06:30,175 - INFO - Directory created at: artifacts]
+2025-11-11 10:06:30,177 - INFO - Loading the dataset from disk...]
+2025-11-11 10:06:30,247 - INFO - Loading the tokenizer and model...]
