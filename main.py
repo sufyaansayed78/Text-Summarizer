@@ -1,6 +1,7 @@
 from src.textsummarizer.logging import logger
 from src.textsummarizer.pipeline.data_ingestion_pipeline import DataIngestionPipeline
 from src.textsummarizer.pipeline.data_transformation_pipeline import DataTransformationPipeline
+from src.textsummarizer.pipeline.model_trainer_pipeline import ModelTrainerPipeline
 logger.info("Starting the main application...")
 
 try :
@@ -17,6 +18,12 @@ try:
 except Exception as e:
     logger.exception(f"An error occurred in the data transformation pipeline: {e}")
 
+try : 
+    model_trainer = ModelTrainerPipeline()
+    model_trainer.initiate_model_trainer()
+    logger.info("Model training completed successfully.")
+except Exception as e:
+    logger.exception(f"An error occurred in the model trainer pipeline: {e}")
 
 
 
